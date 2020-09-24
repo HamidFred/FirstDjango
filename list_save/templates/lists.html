@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+	<p>
+		{% if msg %}
+			{{msg}}
+		{% endif %}
+	</p>
+<table>
+	{% for i in lists %}
+	<tr>
+		<td>{{i.username}}</td>
+		<td>{{i.email}}</td>
+	</tr>
+	{% endfor %}
+</table>
+	<a href="{% url 'create' %}" id="id">Create</a>
+	<a href="{% url 'hello' %}" id="id">HOme</a>
+</body>
+</html>

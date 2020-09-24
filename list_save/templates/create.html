@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creating</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+<form method="POST" action="">
+	{% csrf_token %}
+	{{form.as_p}}
+	<input type="submit" value="Save">
+</form>
+<div>
+	<a href="{% url 'lists' %}" id="id">Lists</a>
+	<a href="{% url 'hello' %}" id="id">HOme</a>
+</div>
+</body>
+</html>
+

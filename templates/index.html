@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+	
+		<h1>Hello World ?.??</h1>
+		<h1>Welcome to Django ?.??</h1>
+		<a href="{% url 'lists' %}">Lists</a>
+		<a href="{% url 'create' %}">Create</a>
+		<img src="{% static 'pip.jpg' %}" width="100">
+</body>
+</html>
