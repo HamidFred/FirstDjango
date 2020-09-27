@@ -15,7 +15,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['hamidmardobe.pythonanywhere.com']
 
-
 # Application definition
 
 INSTALLED_APPS = [
